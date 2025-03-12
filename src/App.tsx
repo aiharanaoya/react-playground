@@ -1,5 +1,3 @@
-import { FC } from "react"
+import type { FC } from 'react';
 
-export const App: FC = () => (
-  <h1>React Playground</h1>
-)
+export const App: FC = () => <h1>React Playground</h1>;
