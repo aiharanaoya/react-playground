@@ -6,10 +6,6 @@
 		"include": ["./src/**/*"]
 	},
 	"formatter": {
-		"enabled": true,
-		"indentStyle": "tab"
-	},
-	"organizeImports": {
 		"enabled": true
 	},
 	"linter": {
@@ -22,5 +18,8 @@
 		"formatter": {
 			"quoteStyle": "single"
 		}
+	},
+	"organizeImports": {
+		"enabled": true
 	}
 }
