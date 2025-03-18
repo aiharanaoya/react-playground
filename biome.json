@@ -19,6 +19,18 @@
 			"quoteStyle": "single"
 		}
 	},
+	"css": {
+		"parser": {
+			"cssModules": true
+		},
+		"formatter": {
+			"enabled": true,
+			"quoteStyle": "single"
+		},
+		"linter": {
+			"enabled": true
+		}
+	},
 	"organizeImports": {
 		"enabled": true
 	}
