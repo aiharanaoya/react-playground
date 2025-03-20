@@ -17,3 +17,5 @@ jobs:
         run: pnpm i --frozen-lockfile
       - name: Build
         run: pnpm build
+
+# test
