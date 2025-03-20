@@ -1,7 +1,8 @@
 name: Biome
 
 on:
-  pull_request:
+  - push
+  - pull_request
 
 jobs:
   job:
