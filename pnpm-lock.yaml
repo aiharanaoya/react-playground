@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      destyle.css:
+        specifier: ^4.0.1
+        version: 4.0.1
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -913,6 +916,9 @@ packages:
   dequal@2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
     engines: {node: '>=6'}
+
+  destyle.css@4.0.1:
+    resolution: {integrity: sha512-G9iyW0JfRkgdxhbWQeuLdO1KZ40nzKssHtArbSFvaU/w44G0cZ5v3u4bHY829INSu480J/fxae+lTm225mN3Vw==}
 
   doctrine@3.0.0:
     resolution: {integrity: sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==}
@@ -2318,6 +2324,8 @@ snapshots:
   define-lazy-prop@2.0.0: {}
 
   dequal@2.0.3: {}
+
+  destyle.css@4.0.1: {}
 
   doctrine@3.0.0:
     dependencies:

@@ -1,0 +1,9 @@
+html,
+body {
+	--white: #fff;
+	--dark-gray: #666;
+	--gray: #ccc;
+	--right-gray: #eee;
+
+	font-family: Inter, sans-serif;
+}
