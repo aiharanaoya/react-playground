@@ -54,6 +54,9 @@ importers:
       '@types/react-dom':
         specifier: 19.1.2
         version: 19.1.2(@types/react@19.1.1)
+      '@types/react-transition-group':
+        specifier: 4.4.12
+        version: 4.4.12(@types/react@19.1.1)
       '@vitejs/plugin-react-swc':
         specifier: 3.8.1
         version: 3.8.1(vite@6.2.6)
@@ -824,6 +827,11 @@ packages:
     resolution: {integrity: sha512-XGJkWF41Qq305SKWEILa1O8vzhb3aOo3ogBlSmiqNko/WmRb6QIaweuZCXjKygVDXpzXb5wyxKTSOsmkuqj+Qw==}
     peerDependencies:
       '@types/react': ^19.0.0
+
+  '@types/react-transition-group@4.4.12':
+    resolution: {integrity: sha512-8TV6R3h2j7a91c+1DXdJi3Syo69zzIZbz7Lg5tORM5LEJG7X/E6a1V3drRyBRZq7/utz7A+c4OgYLiLcYGHG6w==}
+    peerDependencies:
+      '@types/react': '*'
 
   '@types/react@19.1.1':
     resolution: {integrity: sha512-ePapxDL7qrgqSF67s0h9m412d9DbXyC1n59O2st+9rjuuamWsZuD2w55rqY12CbzsZ7uVXb5Nw0gEp9Z8MMutQ==}
@@ -2449,6 +2457,10 @@ snapshots:
   '@types/mdx@2.0.13': {}
 
   '@types/react-dom@19.1.2(@types/react@19.1.1)':
+    dependencies:
+      '@types/react': 19.1.1
+
+  '@types/react-transition-group@4.4.12(@types/react@19.1.1)':
     dependencies:
       '@types/react': 19.1.1
 
