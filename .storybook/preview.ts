@@ -1,4 +1,6 @@
 import type { Preview } from '@storybook/react';
+import '@/styles/global.css';
+import 'destyle.css';
 
 const preview: Preview = {
 	parameters: {
