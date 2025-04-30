@@ -1,8 +1,6 @@
 .root {
-	padding: 0;
-	border: none;
 	border-radius: 8px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border: 1px solid var(--gray);
 }
 
 .root::backdrop {
@@ -12,64 +10,30 @@
 }
 
 .content {
-	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+	padding: 16px;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 16px;
 }
 
 .title {
-	margin: 0;
-	font-size: 1.5rem;
+	font-size: 24px;
 }
 
 .closeButton {
 	background: none;
 	border: none;
-	font-size: 1.5rem;
+	font-size: 24px;
 	cursor: pointer;
-	padding: 4px 8px;
+	padding: 0 8px;
 }
 
 .closeButton:hover {
-	opacity: 0.7;
-}
-
-.body {
-	margin: 0;
-}
-
-/* アニメーション */
-.enter .content {
-	opacity: 0;
-	transform: scale(0.95);
-}
-
-.enterActive .content {
-	opacity: 1;
-	transform: scale(1);
-	transition: opacity 300ms ease-out, transform 300ms ease-out;
-}
-
-.enterActive::backdrop {
-	opacity: 1;
-}
-
-.exit .content {
-	opacity: 1;
-	transform: scale(1);
-}
-
-.exitActive .content {
-	opacity: 0;
-	transform: scale(0.95);
-	transition: opacity 300ms ease-in, transform 300ms ease-in;
-}
-
-.exitActive::backdrop {
-	opacity: 0;
+	opacity: 0.5;
 }

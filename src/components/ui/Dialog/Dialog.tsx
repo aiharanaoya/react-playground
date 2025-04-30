@@ -15,11 +15,15 @@ export const Dialog: FC<Props> = ({
 	children,
 	...rest
 }: Props) => {
+	if (!isOpen) {
+		return null;
+	}
+
 	return (
-		<dialog className={styles.root} open {...rest}>
+		<dialog className={styles.root} open={isOpen} {...rest}>
 			<div className={styles.content}>
 				<div className={styles.header}>
-					<h2 className={styles.title}>{title}</h2>
+					<p className={styles.title}>{title}</p>
 					<button
 						type="button"
 						className={styles.closeButton}
@@ -28,7 +32,7 @@ export const Dialog: FC<Props> = ({
 						×
 					</button>
 				</div>
-				<div className={styles.body}>{children}</div>
+				<div>{children}</div>
 			</div>
 		</dialog>
 	);
