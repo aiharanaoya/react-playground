@@ -58,8 +58,8 @@ importers:
         specifier: 3.1.2
         version: 3.1.2(vitest@3.1.2)
       happy-dom:
-        specifier: 17.4.4
-        version: 17.4.4
+        specifier: 17.4.6
+        version: 17.4.6
       storybook:
         specifier: 8.6.12
         version: 8.6.12
@@ -74,7 +74,7 @@ importers:
         version: 5.1.4(typescript@5.8.3)(vite@6.3.4)
       vitest:
         specifier: 3.1.2
-        version: 3.1.2(@vitest/ui@3.1.2)(happy-dom@17.4.4)
+        version: 3.1.2(@vitest/ui@3.1.2)(happy-dom@17.4.6)
 
 packages:
 
@@ -1135,8 +1135,8 @@ packages:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
     engines: {node: '>= 0.4'}
 
-  happy-dom@17.4.4:
-    resolution: {integrity: sha512-/Pb0ctk3HTZ5xEL3BZ0hK1AqDSAUuRQitOmROPHhfUYEWpmTImwfD8vFDGADmMAX0JYgbcgxWoLFKtsWhcpuVA==}
+  happy-dom@17.4.6:
+    resolution: {integrity: sha512-OEV1hDe9i2rFr66+WZNiwy1S8rAJy6bRXmXql68YJDjdfHBRbN76om+qVh68vQACf6y5Bcr90e/oK53RQxsDdg==}
     engines: {node: '>=18.0.0'}
 
   has-flag@4.0.0:
@@ -2403,7 +2403,7 @@ snapshots:
       std-env: 3.9.0
       test-exclude: 7.0.1
       tinyrainbow: 2.0.0
-      vitest: 3.1.2(@vitest/ui@3.1.2)(happy-dom@17.4.4)
+      vitest: 3.1.2(@vitest/ui@3.1.2)(happy-dom@17.4.6)
     transitivePeerDependencies:
       - supports-color
 
@@ -2450,7 +2450,7 @@ snapshots:
       sirv: 3.0.1
       tinyglobby: 0.2.13
       tinyrainbow: 2.0.0
-      vitest: 3.1.2(@vitest/ui@3.1.2)(happy-dom@17.4.4)
+      vitest: 3.1.2(@vitest/ui@3.1.2)(happy-dom@17.4.6)
 
   '@vitest/utils@3.1.2':
     dependencies:
@@ -2727,7 +2727,7 @@ snapshots:
 
   gopd@1.2.0: {}
 
-  happy-dom@17.4.4:
+  happy-dom@17.4.6:
     dependencies:
       webidl-conversions: 7.0.0
       whatwg-mimetype: 3.0.0
@@ -3212,7 +3212,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitest@3.1.2(@vitest/ui@3.1.2)(happy-dom@17.4.4):
+  vitest@3.1.2(@vitest/ui@3.1.2)(happy-dom@17.4.6):
     dependencies:
       '@vitest/expect': 3.1.2
       '@vitest/mocker': 3.1.2(vite@6.3.4)
@@ -3237,7 +3237,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@vitest/ui': 3.1.2(vitest@3.1.2)
-      happy-dom: 17.4.4
+      happy-dom: 17.4.6
     transitivePeerDependencies:
       - jiti
       - less
