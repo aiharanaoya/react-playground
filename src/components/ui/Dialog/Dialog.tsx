@@ -1,39 +1,89 @@
-import type { ComponentPropsWithoutRef, FC, PropsWithChildren } from 'react';
+import {
+	FloatingFocusManager,
+	FloatingOverlay,
+	FloatingPortal,
+	useClick,
+	useDismiss,
+	useFloating,
+	useInteractions,
+	useRole,
+	useTransitionStyles,
+} from '@floating-ui/react';
+import type { Dispatch, PropsWithChildren, SetStateAction } from 'react';
 import styles from './Dialog.module.css';
 
 type Props = PropsWithChildren<{
 	isOpen: boolean;
-	onClose: () => void;
+	setIsOpen: Dispatch<SetStateAction<boolean>>;
 	title: string;
-}> &
-	ComponentPropsWithoutRef<'dialog'>;
+}>;
 
-export const Dialog: FC<Props> = ({
+export const Dialog: React.FC<Props> = ({
 	isOpen,
-	onClose,
+	setIsOpen,
 	title,
 	children,
-	...rest
-}: Props) => {
-	if (!isOpen) {
+}) => {
+	const { refs, context } = useFloating({
+		open: isOpen,
+		onOpenChange: setIsOpen,
+	});
+
+	const click = useClick(context);
+
+	const dismiss = useDismiss(context, {
+		outsidePress: true,
+		outsidePressEvent: 'pointerdown',
+	});
+
+	const role = useRole(context);
+
+	const { getFloatingProps } = useInteractions([click, dismiss, role]);
+
+	const { isMounted, styles: transitionStyles } = useTransitionStyles(context, {
+		duration: 400,
+		initial: {
+			opacity: 0,
+			transform: 'translateY(-100vh)',
+		},
+		open: {
+			opacity: 1,
+			transform: 'translateY(0)',
+		},
+		close: {
+			opacity: 0,
+			transform: 'translateY(-100vh)',
+		},
+	});
+
+	if (!isMounted) {
 		return null;
 	}
 
 	return (
-		<dialog className={styles.root} open={isOpen} {...rest}>
-			<div className={styles.content}>
-				<div className={styles.header}>
-					<p className={styles.title}>{title}</p>
-					<button
-						type="button"
-						className={styles.closeButton}
-						onClick={onClose}
+		<FloatingPortal>
+			<FloatingOverlay lockScroll className={styles.root}>
+				<FloatingFocusManager context={context}>
+					<div
+						ref={refs.setFloating}
+						style={transitionStyles}
+						className={styles.content}
+						{...getFloatingProps()}
 					>
-						×
-					</button>
-				</div>
-				<div>{children}</div>
-			</div>
-		</dialog>
+						<div className={styles.header}>
+							<p className={styles.title}>{title}</p>
+							<button
+								type="button"
+								className={styles.closeButton}
+								onClick={() => setIsOpen(false)}
+							>
+								×
+							</button>
+						</div>
+						<div>{children}</div>
+					</div>
+				</FloatingFocusManager>
+			</FloatingOverlay>
+		</FloatingPortal>
 	);
 };

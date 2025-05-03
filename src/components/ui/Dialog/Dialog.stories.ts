@@ -5,9 +5,9 @@ export default {
 	component: Dialog,
 	args: {
 		isOpen: true,
+		setIsOpen: () => {},
 		title: 'Dialog Title',
 		children: 'Dialog Content',
-		onClose: () => {},
 	},
 } satisfies Meta<typeof Dialog>;
 
