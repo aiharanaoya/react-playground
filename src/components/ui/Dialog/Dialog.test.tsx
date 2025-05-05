@@ -6,7 +6,7 @@ import { Dialog } from '.';
 describe('Dialog', () => {
 	test('ダイアログが開いている場合、コンテンツが表示される', () => {
 		render(
-			<Dialog isOpen={true} onClose={() => {}} title="Test Dialog">
+			<Dialog isOpen={true} setIsOpen={() => {}} title="Test Dialog">
 				Test Content
 			</Dialog>,
 		);
@@ -17,7 +17,7 @@ describe('Dialog', () => {
 
 	test('ダイアログが閉じている場合、コンテンツが表示されない', () => {
 		render(
-			<Dialog isOpen={false} onClose={() => {}} title="Test Dialog">
+			<Dialog isOpen={false} setIsOpen={() => {}} title="Test Dialog">
 				Test Content
 			</Dialog>,
 		);
@@ -27,7 +27,7 @@ describe('Dialog', () => {
 	test('閉じるボタンがクリックされた時、onClose関数が呼ばれる', async () => {
 		const handleClose = vi.fn();
 		render(
-			<Dialog isOpen={true} onClose={handleClose} title="Test Dialog">
+			<Dialog isOpen={true} setIsOpen={handleClose} title="Test Dialog">
 				Test Content
 			</Dialog>,
 		);
