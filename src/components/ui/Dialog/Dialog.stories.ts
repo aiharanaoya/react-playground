@@ -7,7 +7,8 @@ export default {
 		isOpen: true,
 		setIsOpen: () => {},
 		title: 'Dialog Title',
-		children: 'Dialog Content',
+		children:
+			'Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text',
 	},
 } satisfies Meta<typeof Dialog>;
 

@@ -62,7 +62,7 @@ export const Dialog: React.FC<Props> = ({
 
 	return (
 		<FloatingPortal>
-			<FloatingOverlay lockScroll className={styles.root}>
+			<FloatingOverlay lockScroll className={styles.overlay}>
 				<FloatingFocusManager context={context}>
 					<div
 						ref={refs.setFloating}
