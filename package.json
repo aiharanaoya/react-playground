@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "cmk && vite",
     "typecheck": "tsc --noEmit",
-    "build": "tsc -b && vite build",
+    "build": "cmk && tsc -b && vite build",
     "preview": "vite preview",
+    "cmk": "cmk",
     "biome": "biome check",
     "biome:fix": "biome check --write",
     "test": "vitest run",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@css-modules-kit/codegen": "0.2.0",
     "@storybook/addon-essentials": "8.6.12",
     "@storybook/react": "8.6.12",
     "@storybook/react-vite": "8.6.12",
