@@ -1,4 +1,4 @@
-import type { Preview } from '@storybook/react';
+import type { Preview } from '@storybook/react-vite';
 import '@/styles/global.css';
 import 'destyle.css';
 
@@ -11,6 +11,7 @@ const preview: Preview = {
 			},
 		},
 	},
+	tags: ['autodocs'],
 };
 
 export default preview;
