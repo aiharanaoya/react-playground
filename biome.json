@@ -2,8 +2,7 @@
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
 		"ignoreUnknown": false,
-		"include": ["./**/*"],
-		"ignore": ["package.json", "dist"]
+		"includes": ["**/*", "!**/package.json", "!**/dist"]
 	},
 	"formatter": {
 		"enabled": true
@@ -31,7 +30,7 @@
 			"enabled": true
 		}
 	},
-	"organizeImports": {
-		"enabled": true
+	"assist": {
+		"actions": { "source": { "organizeImports": "on" } }
 	}
 }
