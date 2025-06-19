@@ -2,7 +2,14 @@
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
 		"ignoreUnknown": false,
-		"includes": ["**/*", "!**/package.json", "!**/dist"]
+		"includes": [
+			"**/*",
+			"!**/coverage/**",
+			"!**/dist",
+			"!**/generated",
+			"!**/node_modules",
+			"!**/storybook-static"
+		]
 	},
 	"formatter": {
 		"enabled": true
