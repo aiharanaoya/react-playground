@@ -2,8 +2,14 @@
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
 		"ignoreUnknown": false,
-		"include": ["./**/*"],
-		"ignore": ["package.json", "dist"]
+		"includes": [
+			"**/*",
+			"!**/coverage/**",
+			"!**/dist",
+			"!**/generated",
+			"!**/node_modules",
+			"!**/storybook-static"
+		]
 	},
 	"formatter": {
 		"enabled": true
@@ -31,7 +37,7 @@
 			"enabled": true
 		}
 	},
-	"organizeImports": {
-		"enabled": true
+	"assist": {
+		"actions": { "source": { "organizeImports": "on" } }
 	}
 }
