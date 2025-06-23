@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.0.5",
-		"@css-modules-kit/codegen": "0.4.0",
+		"@css-modules-kit/codegen": "0.4.1",
 		"@storybook/react-vite": "9.0.12",
 		"@testing-library/jest-dom": "6.6.3",
 		"@testing-library/react": "16.3.0",
