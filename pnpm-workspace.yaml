@@ -1,0 +1,3 @@
+useNodeVersion: 22.17.0
+managePackageManagerVersions: true
+saveExact: true
