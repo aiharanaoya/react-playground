@@ -1,6 +1,6 @@
 # React Playground
 
-A modern React component development environment with TypeScript, Vite, and comprehensive tooling for building, testing, and documenting UI components.
+A React component development playground built with TypeScript and Vite. This environment is designed for experimenting with various technologies and building UI components with comprehensive tooling support.
 
 ## Features
 
