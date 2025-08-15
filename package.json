@@ -23,7 +23,7 @@
 		"react-dom": "19.1.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.1.4",
+		"@biomejs/biome": "2.2.0",
 		"@css-modules-kit/codegen": "0.5.0",
 		"@storybook/react-vite": "9.1.2",
 		"@testing-library/jest-dom": "6.7.0",
