@@ -25,8 +25,8 @@ importers:
         specifier: 2.2.2
         version: 2.2.2
       '@css-modules-kit/codegen':
-        specifier: 0.5.0
-        version: 0.5.0(typescript@5.9.2)
+        specifier: 0.6.0
+        version: 0.6.0(typescript@5.9.2)
       '@storybook/react-vite':
         specifier: 9.1.4
         version: 9.1.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rollup@4.48.0)(storybook@9.1.4(@testing-library/dom@10.4.1)(vite@7.1.4(@types/node@20.19.11)))(typescript@5.9.2)(vite@7.1.4(@types/node@20.19.11))
@@ -213,15 +213,15 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@css-modules-kit/codegen@0.5.0':
-    resolution: {integrity: sha512-rUaDxG/6ZRdl/dY49nFvG6ViTLoBesSb4KV58gwKLrDCstLlEywX5urLKaypumCi6PvOR8f5CTyn91xDL05eUg==}
+  '@css-modules-kit/codegen@0.6.0':
+    resolution: {integrity: sha512-sU6B4rNuB0DylYPJ5vEr/n2BlHLIepCA6I3I6idK77XxDaXdn72FTKcWWqng/7LktUCUlEU31nV1nwd+fyH7TQ==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
       typescript: ^5.7.3
 
-  '@css-modules-kit/core@0.5.1':
-    resolution: {integrity: sha512-ReX9OPmf2nOBH8ULk1LhVkwyVYVG8hL56bKsfPJ4EiRDv6owdbOp+HakYTCEY84MIDWkCzFFKgdjpY8aWRVEqA==}
+  '@css-modules-kit/core@0.6.0':
+    resolution: {integrity: sha512-3cTD030BbKsRb5aLw7s7psB2ijzALCIJbn2xZ6AX1rPziS8G4wQJ+xtzJfRUM9bjigchQt1pbthmX4ZP7esicQ==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
       typescript: ^5.7.3
@@ -1699,12 +1699,12 @@ snapshots:
   '@biomejs/cli-win32-x64@2.2.2':
     optional: true
 
-  '@css-modules-kit/codegen@0.5.0(typescript@5.9.2)':
+  '@css-modules-kit/codegen@0.6.0(typescript@5.9.2)':
     dependencies:
-      '@css-modules-kit/core': 0.5.1(typescript@5.9.2)
+      '@css-modules-kit/core': 0.6.0(typescript@5.9.2)
       typescript: 5.9.2
 
-  '@css-modules-kit/core@0.5.1(typescript@5.9.2)':
+  '@css-modules-kit/core@0.6.0(typescript@5.9.2)':
     dependencies:
       postcss: 8.5.6
       postcss-safe-parser: 7.0.1(postcss@8.5.6)
