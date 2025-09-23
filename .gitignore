@@ -3,3 +3,4 @@ dist
 generated
 node_modules
 storybook-static
+__screenshots__
