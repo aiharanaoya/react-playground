@@ -6,6 +6,7 @@ const config: StorybookConfig = {
 		name: '@storybook/react-vite',
 		options: {},
 	},
+	addons: ['storycap'],
 };
 
 export default config;
