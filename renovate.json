@@ -3,5 +3,6 @@
 	"extends": ["config:recommended"],
 	"lockFileMaintenance": {
 		"enabled": true
-	}
+	},
+	"minimumReleaseAge": "3 days"
 }
