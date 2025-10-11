@@ -55,8 +55,8 @@ importers:
         specifier: 3.2.4
         version: 3.2.4(vitest@3.2.4)
       happy-dom:
-        specifier: 19.0.2
-        version: 19.0.2
+        specifier: 20.0.0
+        version: 20.0.0
       storybook:
         specifier: 9.1.10
         version: 9.1.10(@testing-library/dom@10.4.1)(vite@7.1.9(@types/node@20.19.19))
@@ -71,7 +71,7 @@ importers:
         version: 5.1.4(typescript@5.9.3)(vite@7.1.9(@types/node@20.19.19))
       vitest:
         specifier: 3.2.4
-        version: 3.2.4(@types/node@20.19.19)(@vitest/ui@3.2.4)(happy-dom@19.0.2)
+        version: 3.2.4(@types/node@20.19.19)(@vitest/ui@3.2.4)(happy-dom@20.0.0)
 
 packages:
 
@@ -1028,8 +1028,8 @@ packages:
   globrex@0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
 
-  happy-dom@19.0.2:
-    resolution: {integrity: sha512-831CLbgDyjRbd2lApHZFsBDe56onuFcjsCBPodzWpzedTpeDr8CGZjs7iEIdNW1DVwSFRecfwzLpVyGBPamwGA==}
+  happy-dom@20.0.0:
+    resolution: {integrity: sha512-GkWnwIFxVGCf2raNrxImLo397RdGhLapj5cT3R2PT7FwL62Ze1DROhzmYW7+J3p9105DYMVenEejEbnq5wA37w==}
     engines: {node: '>=20.0.0'}
 
   has-flag@4.0.0:
@@ -2129,7 +2129,7 @@ snapshots:
       std-env: 3.9.0
       test-exclude: 7.0.1
       tinyrainbow: 2.0.0
-      vitest: 3.2.4(@types/node@20.19.19)(@vitest/ui@3.2.4)(happy-dom@19.0.2)
+      vitest: 3.2.4(@types/node@20.19.19)(@vitest/ui@3.2.4)(happy-dom@20.0.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -2178,7 +2178,7 @@ snapshots:
       sirv: 3.0.2
       tinyglobby: 0.2.15
       tinyrainbow: 2.0.0
-      vitest: 3.2.4(@types/node@20.19.19)(@vitest/ui@3.2.4)(happy-dom@19.0.2)
+      vitest: 3.2.4(@types/node@20.19.19)(@vitest/ui@3.2.4)(happy-dom@20.0.0)
 
   '@vitest/utils@3.2.4':
     dependencies:
@@ -2389,7 +2389,7 @@ snapshots:
 
   globrex@0.1.2: {}
 
-  happy-dom@19.0.2:
+  happy-dom@20.0.0:
     dependencies:
       '@types/node': 20.19.19
       '@types/whatwg-mimetype': 3.0.2
@@ -2825,7 +2825,7 @@ snapshots:
       '@types/node': 20.19.19
       fsevents: 2.3.3
 
-  vitest@3.2.4(@types/node@20.19.19)(@vitest/ui@3.2.4)(happy-dom@19.0.2):
+  vitest@3.2.4(@types/node@20.19.19)(@vitest/ui@3.2.4)(happy-dom@20.0.0):
     dependencies:
       '@types/chai': 5.2.2
       '@vitest/expect': 3.2.4
@@ -2853,7 +2853,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.19.19
       '@vitest/ui': 3.2.4(vitest@3.2.4)
-      happy-dom: 19.0.2
+      happy-dom: 20.0.0
     transitivePeerDependencies:
       - jiti
       - less
