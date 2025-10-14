@@ -5,12 +5,12 @@
 	"type": "module",
 	"scripts": {
 		"dev": "cssdts && vite",
-		"typecheck": "tsc --noEmit",
 		"build": "cssdts && tsc -b && vite build",
 		"preview": "vite preview",
+		"typecheck": "tsc --noEmit",
 		"cssdts": "cmk",
-		"biome": "biome check",
-		"biome:fix": "biome check --write",
+		"lint": "biome check",
+		"lint:fix": "biome check --write",
 		"test": "vitest run",
 		"storybook": "storybook dev -p 6006",
 		"storybook:build": "storybook build"

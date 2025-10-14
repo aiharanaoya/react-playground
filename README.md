@@ -37,11 +37,11 @@ pnpm preview      # Preview production build
 
 # Code Quality
 pnpm typecheck    # Run TypeScript checks
-pnpm biome        # Run linter and formatter
+pnpm lint        # Run linter and formatter
 
 # Testing
 pnpm test         # Run all tests
 
 # CSS Modules
-pnpm cmk          # Generate CSS Modules type definitions
+pnpm cssdts          # Generate CSS Modules type definitions
 ```
