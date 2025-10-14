@@ -4,7 +4,6 @@
 		"ignoreUnknown": false,
 		"includes": [
 			"**/*",
-			"!**/coverage/**",
 			"!**/dist",
 			"!**/generated",
 			"!**/node_modules",
