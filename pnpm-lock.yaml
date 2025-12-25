@@ -22,8 +22,8 @@ importers:
         specifier: 2.3.10
         version: 2.3.10
       '@css-modules-kit/codegen':
-        specifier: 0.6.0
-        version: 0.6.0(typescript@5.9.3)
+        specifier: 0.7.0
+        version: 0.7.0(typescript@5.9.3)
       '@storybook/react-vite':
         specifier: 10.1.10
         version: 10.1.10(esbuild@0.27.2)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(rollup@4.54.0)(storybook@10.1.10(@testing-library/dom@10.4.1)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(typescript@5.9.3)(vite@7.3.0(@types/node@20.19.27))
@@ -197,15 +197,15 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@css-modules-kit/codegen@0.6.0':
-    resolution: {integrity: sha512-sU6B4rNuB0DylYPJ5vEr/n2BlHLIepCA6I3I6idK77XxDaXdn72FTKcWWqng/7LktUCUlEU31nV1nwd+fyH7TQ==}
+  '@css-modules-kit/codegen@0.7.0':
+    resolution: {integrity: sha512-TwyxfAwyB4DD9GnAbqYpBEei5xVq0nBjIrlNV++/vdU4m6qFFzedPkcJIBXdTU4nDzuO2iUXll3fwEz++KS3pw==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
       typescript: ^5.7.3
 
-  '@css-modules-kit/core@0.6.0':
-    resolution: {integrity: sha512-3cTD030BbKsRb5aLw7s7psB2ijzALCIJbn2xZ6AX1rPziS8G4wQJ+xtzJfRUM9bjigchQt1pbthmX4ZP7esicQ==}
+  '@css-modules-kit/core@0.7.0':
+    resolution: {integrity: sha512-45YSg8KMGZ7RPXvtPELsqj1bMwGZna/SWaYJvtcxC+4mdu9WA+m1tzqgA+F57PJv107IjNI0pwTLwXhOsnURJg==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
       typescript: ^5.7.3
@@ -876,6 +876,10 @@ packages:
     resolution: {integrity: sha512-OAlb+T7V4Op9OwdkjmguYRqncdlx5JiofwOAUkmTF+jNdHwzTaTs4sRAGpzLF3oOz5xAyDGrPgeIDFQmDOTiJw==}
     engines: {node: '>= 16'}
 
+  chokidar@4.0.3:
+    resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
+    engines: {node: '>= 14.16.0'}
+
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
@@ -1196,6 +1200,10 @@ packages:
   react@19.2.3:
     resolution: {integrity: sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==}
     engines: {node: '>=0.10.0'}
+
+  readdirp@4.1.2:
+    resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
+    engines: {node: '>= 14.18.0'}
 
   recast@0.23.11:
     resolution: {integrity: sha512-YTUo+Flmw4ZXiWfQKGcwwc11KnoRAYgzAE2E7mXKCjSviTKShtxBsN6YUUBB2gtaBzKzeKunxhUwNHQuRryhWA==}
@@ -1641,12 +1649,13 @@ snapshots:
   '@biomejs/cli-win32-x64@2.3.10':
     optional: true
 
-  '@css-modules-kit/codegen@0.6.0(typescript@5.9.3)':
+  '@css-modules-kit/codegen@0.7.0(typescript@5.9.3)':
     dependencies:
-      '@css-modules-kit/core': 0.6.0(typescript@5.9.3)
+      '@css-modules-kit/core': 0.7.0(typescript@5.9.3)
+      chokidar: 4.0.3
       typescript: 5.9.3
 
-  '@css-modules-kit/core@0.6.0(typescript@5.9.3)':
+  '@css-modules-kit/core@0.7.0(typescript@5.9.3)':
     dependencies:
       postcss: 8.5.6
       postcss-safe-parser: 7.0.1(postcss@8.5.6)
@@ -2190,6 +2199,10 @@ snapshots:
 
   check-error@2.1.1: {}
 
+  chokidar@4.0.3:
+    dependencies:
+      readdirp: 4.1.2
+
   color-convert@2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -2467,6 +2480,8 @@ snapshots:
   react-is@17.0.2: {}
 
   react@19.2.3: {}
+
+  readdirp@4.1.2: {}
 
   recast@0.23.11:
     dependencies:
