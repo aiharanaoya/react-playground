@@ -14,7 +14,7 @@ export default defineConfig({
 			{
 				extends: true,
 				test: {
-					name: 'unit test',
+					name: 'unit',
 					environment: 'happy-dom',
 					setupFiles: './src/testing/setupTestingLibrary.ts',
 				},
@@ -31,10 +31,15 @@ export default defineConfig({
 					}),
 				],
 				test: {
-					name: 'storybook test',
+					name: 'storybook',
 					browser: {
 						enabled: true,
-						provider: playwright({}),
+						provider: playwright({
+							connectOptions: {
+								wsEndpoint: 'ws://playwright:49695',
+								exposeNetwork: '<loopback>',
+							},
+						}),
 						headless: true,
 						instances: [{ browser: 'chromium' }],
 					},
