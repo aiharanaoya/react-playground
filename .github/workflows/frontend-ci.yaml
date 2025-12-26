@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: latest
           cache: pnpm
-      - uses: docker/setup-compose-action@v1
+      - uses: docker/setup-compose-action@364cc21a5de5b1ee4a7f5f9d3fa374ce0ccde746 # v1.2.0
       - run: pnpm i --frozen-lockfile
       - run: pnpm test
 
