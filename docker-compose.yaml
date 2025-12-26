@@ -7,3 +7,14 @@ services:
     extra_hosts:
       - host.docker.internal:host-gateway
     ipc: host
+  test-runner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: pnpm vitest run
+    depends_on:
+      - playwright

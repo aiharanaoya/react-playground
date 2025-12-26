@@ -1,0 +1,11 @@
+.github
+.pnpm-store
+.vscode
+dist
+generated
+node_modules
+.git
+.gitignore
+storybook-static
+coverage
+README.md

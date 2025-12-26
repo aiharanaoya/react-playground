@@ -36,7 +36,7 @@ export default defineConfig({
 						enabled: true,
 						provider: playwright({
 							connectOptions: {
-								wsEndpoint: 'ws://127.0.0.1:49695',
+								wsEndpoint: 'ws://playwright:49695',
 								exposeNetwork: '<loopback>',
 							},
 						}),
