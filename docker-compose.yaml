@@ -1,0 +1,9 @@
+services:
+  playwright:
+    image: mcr.microsoft.com/playwright:v1.57.0-noble
+    command: npx playwright run-server --port 49695
+    ports:
+      - 49695:49695
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ipc: host
