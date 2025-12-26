@@ -44,6 +44,7 @@ export default defineConfig({
 						instances: [{ browser: 'chromium' }],
 					},
 					setupFiles: ['./.storybook/vitest.setup.ts'],
+					retry: 3,
 				},
 			},
 		],
