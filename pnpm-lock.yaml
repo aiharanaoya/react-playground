@@ -22,8 +22,8 @@ importers:
         specifier: 2.3.11
         version: 2.3.11
       '@css-modules-kit/codegen':
-        specifier: 0.7.0
-        version: 0.7.0(typescript@5.9.3)
+        specifier: 0.8.0
+        version: 0.8.0(typescript@5.9.3)
       '@storybook/addon-vitest':
         specifier: 10.1.11
         version: 10.1.11(@vitest/browser-playwright@4.0.17)(@vitest/browser@4.0.17(vite@7.3.1(@types/node@20.19.29))(vitest@4.0.17))(@vitest/runner@4.0.17)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(storybook@10.1.11(@testing-library/dom@10.4.1)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vitest@4.0.17)
@@ -206,15 +206,15 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@css-modules-kit/codegen@0.7.0':
-    resolution: {integrity: sha512-TwyxfAwyB4DD9GnAbqYpBEei5xVq0nBjIrlNV++/vdU4m6qFFzedPkcJIBXdTU4nDzuO2iUXll3fwEz++KS3pw==}
+  '@css-modules-kit/codegen@0.8.0':
+    resolution: {integrity: sha512-ecB4AvaRLkSRUtQh7YCTLSV/0t3pMDnozW9jcxjjaWd8U80hoztSCgA2qVru6FrsCTtORgMV9Iu/Is35fyt+hQ==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
       typescript: ^5.7.3
 
-  '@css-modules-kit/core@0.7.0':
-    resolution: {integrity: sha512-45YSg8KMGZ7RPXvtPELsqj1bMwGZna/SWaYJvtcxC+4mdu9WA+m1tzqgA+F57PJv107IjNI0pwTLwXhOsnURJg==}
+  '@css-modules-kit/core@0.8.0':
+    resolution: {integrity: sha512-yIt+7ZhmYZWTiJ6MqHoZlySvbllkUGxeyfVL27lgzRGPZ3og/gX9JJ4KDJIgCY8zZuFrPiaS/E6JWRsqlw5xvw==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
       typescript: ^5.7.3
@@ -1745,13 +1745,13 @@ snapshots:
   '@biomejs/cli-win32-x64@2.3.11':
     optional: true
 
-  '@css-modules-kit/codegen@0.7.0(typescript@5.9.3)':
+  '@css-modules-kit/codegen@0.8.0(typescript@5.9.3)':
     dependencies:
-      '@css-modules-kit/core': 0.7.0(typescript@5.9.3)
+      '@css-modules-kit/core': 0.8.0(typescript@5.9.3)
       chokidar: 4.0.3
       typescript: 5.9.3
 
-  '@css-modules-kit/core@0.7.0(typescript@5.9.3)':
+  '@css-modules-kit/core@0.8.0(typescript@5.9.3)':
     dependencies:
       postcss: 8.5.6
       postcss-safe-parser: 7.0.1(postcss@8.5.6)
