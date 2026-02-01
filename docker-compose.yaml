@@ -15,6 +15,6 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
-    command: pnpm vitest run
+    command: pnpm vitest run --project storybook
     depends_on:
       - playwright
