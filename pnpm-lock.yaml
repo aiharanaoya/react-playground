@@ -52,8 +52,8 @@ importers:
         specifier: 4.0.18
         version: 4.0.18(playwright@1.58.2)(vite@7.3.1(@types/node@25.2.2))(vitest@4.0.18)
       happy-dom:
-        specifier: 20.5.3
-        version: 20.5.3
+        specifier: 20.5.5
+        version: 20.5.5
       playwright:
         specifier: 1.58.2
         version: 1.58.2
@@ -71,7 +71,7 @@ importers:
         version: 6.1.0(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2))
       vitest:
         specifier: 4.0.18
-        version: 4.0.18(@types/node@25.2.2)(@vitest/browser-playwright@4.0.18)(happy-dom@20.5.3)
+        version: 4.0.18(@types/node@25.2.2)(@vitest/browser-playwright@4.0.18)(happy-dom@20.5.5)
 
 packages:
 
@@ -1059,8 +1059,8 @@ packages:
   globrex@0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
 
-  happy-dom@20.5.3:
-    resolution: {integrity: sha512-xqAxGnkRU0KNhheHpxb3uScqg/aehqUiVto/a9ApWMyNvnH9CAqHYq9dEPAovM6bOGbLstmTfGIln5ZIezEU0g==}
+  happy-dom@20.5.5:
+    resolution: {integrity: sha512-7Rc6hQXgkdiuh9uyVIlkiprIiR3TObmWUhsfs1H7sLQZZGebKX+ZT+hgGrMBPuf8I8xwT8k28GD2zDgVG65FyQ==}
     engines: {node: '>=20.0.0'}
 
   hasown@2.0.2:
@@ -1905,7 +1905,7 @@ snapshots:
       '@vitest/browser': 4.0.18(vite@7.3.1(@types/node@25.2.2))(vitest@4.0.18)
       '@vitest/browser-playwright': 4.0.18(playwright@1.58.2)(vite@7.3.1(@types/node@25.2.2))(vitest@4.0.18)
       '@vitest/runner': 4.0.18
-      vitest: 4.0.18(@types/node@25.2.2)(@vitest/browser-playwright@4.0.18)(happy-dom@20.5.3)
+      vitest: 4.0.18(@types/node@25.2.2)(@vitest/browser-playwright@4.0.18)(happy-dom@20.5.5)
     transitivePeerDependencies:
       - react
       - react-dom
@@ -2132,7 +2132,7 @@ snapshots:
       '@vitest/mocker': 4.0.18(vite@7.3.1(@types/node@25.2.2))
       playwright: 1.58.2
       tinyrainbow: 3.0.3
-      vitest: 4.0.18(@types/node@25.2.2)(@vitest/browser-playwright@4.0.18)(happy-dom@20.5.3)
+      vitest: 4.0.18(@types/node@25.2.2)(@vitest/browser-playwright@4.0.18)(happy-dom@20.5.5)
     transitivePeerDependencies:
       - bufferutil
       - msw
@@ -2148,7 +2148,7 @@ snapshots:
       pngjs: 7.0.0
       sirv: 3.0.2
       tinyrainbow: 3.0.3
-      vitest: 4.0.18(@types/node@25.2.2)(@vitest/browser-playwright@4.0.18)(happy-dom@20.5.3)
+      vitest: 4.0.18(@types/node@25.2.2)(@vitest/browser-playwright@4.0.18)(happy-dom@20.5.5)
       ws: 8.19.0
     transitivePeerDependencies:
       - bufferutil
@@ -2389,7 +2389,7 @@ snapshots:
 
   globrex@0.1.2: {}
 
-  happy-dom@20.5.3:
+  happy-dom@20.5.5:
     dependencies:
       '@types/node': 25.2.2
       '@types/whatwg-mimetype': 3.0.2
@@ -2751,7 +2751,7 @@ snapshots:
       '@types/node': 25.2.2
       fsevents: 2.3.3
 
-  vitest@4.0.18(@types/node@25.2.2)(@vitest/browser-playwright@4.0.18)(happy-dom@20.5.3):
+  vitest@4.0.18(@types/node@25.2.2)(@vitest/browser-playwright@4.0.18)(happy-dom@20.5.5):
     dependencies:
       '@vitest/expect': 4.0.18
       '@vitest/mocker': 4.0.18(vite@7.3.1(@types/node@25.2.2))
@@ -2776,7 +2776,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 25.2.2
       '@vitest/browser-playwright': 4.0.18(playwright@1.58.2)(vite@7.3.1(@types/node@25.2.2))(vitest@4.0.18)
-      happy-dom: 20.5.3
+      happy-dom: 20.5.5
     transitivePeerDependencies:
       - jiti
       - less
