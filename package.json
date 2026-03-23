@@ -41,8 +41,5 @@
 		"vite-tsconfig-paths": "6.1.1",
 		"vitest": "4.1.0"
 	},
-	"packageManager": "pnpm@10.32.1",
-	"volta": {
-		"node": "24.14.0"
-	}
+	"packageManager": "pnpm@10.32.1"
 }
