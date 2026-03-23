@@ -18,8 +18,5 @@
 		"paths": {
 			"@/*": ["./src/*"]
 		}
-	},
-	"cmkOptions": {
-		"dtsOutDir": "generated/cmk"
 	}
 }

@@ -1,20 +1,9 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
-		"ignoreUnknown": false,
-		"includes": [
-			"**/*",
-			"!**/dist",
-			"!**/generated",
-			"!**/node_modules",
-			"!**/storybook-static"
-		]
-	},
-	"formatter": {
-		"enabled": true
+		"includes": ["**/*", "!**/dist", "!**/storybook-static"]
 	},
 	"linter": {
-		"enabled": true,
 		"rules": {
 			"recommended": true
 		}
@@ -25,15 +14,8 @@
 		}
 	},
 	"css": {
-		"parser": {
-			"cssModules": true
-		},
 		"formatter": {
-			"enabled": true,
 			"quoteStyle": "single"
-		},
-		"linter": {
-			"enabled": true
 		}
 	},
 	"assist": {

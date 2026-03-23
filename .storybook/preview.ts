@@ -1,6 +1,5 @@
 import type { Preview } from '@storybook/react-vite';
 import '@/styles/global.css';
-import 'destyle.css';
 
 const preview: Preview = {
 	parameters: {
