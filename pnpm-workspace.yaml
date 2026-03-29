@@ -2,5 +2,5 @@ managePackageManagerVersions: true
 saveExact: true
 minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
-  # Renovate security update: happy-dom@20.8.8
-  - happy-dom@20.8.8
+  # Renovate security update: happy-dom@20.8.8 || 20.8.9
+  - happy-dom@20.8.8 || 20.8.9
